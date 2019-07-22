@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exercise #3 (4): Changing images</title>
+
+	<style>
+        #pic {
+            
+        }
+    </style>
+</head>
+<body>
+
+
+	<form action="/home/owner/Desktop/dom-exercises-master/exercise3.html">
+		 <select name="countries" onchange="changeImage(value)">
+    <option value="no image.jpg">select</option>
+    <option value="norway.png">Norway</option>
+     <option value="jordan.jpg">Jordan</option>
+      <option value="jer.jpg">Jerusalem</option>
+    
+
+  </select>
+
+	</form>
+	<br>
+	<br>
+	<img src="no image.jpg"  id= "img">
+     <script type="text/javascript">
+		
+		function changeImage(value){
+			 
+			 var img = document.getElementById("img");
+			img.setAttribute('src',value);
+
+		}
+
+	</script>
+
+
+</body>
+</html>
